@@ -1,9 +1,12 @@
 # 2048
 
-This assignment is to write PlayerAI.py, which intelligently plays the 2048-puzzle game. 
-Here is a snippet of starter code to allow you to observe how the game looks when it is played out. 
-In the following "naive" Player AI. The getMove() function simply selects a next move in random out 
-of the available moves: 
+
+이 코드는 2048 퍼즐 게임을 지능적으로 플레이하는 PlayerAI.py를 작성하는 것입니다. 다음은 게임이 실행될 때 게임이 어떻게 보이는지 관찰할 수 있는 시작 코드 조각입니다. 다음의 "순진한" 플레이어 AI에서. getMove() 함수는 사용 가능한 이동 중에서 무작위로 다음 이동을 선택합니다.
+
+
+물론, 그것은 실제로 2048 퍼즐 게임을 플레이하는 매우 순진한 방법입니다. 다음 사항을 염두에 두고 플레이어 AI를 구현해야 합니다.
+
+This is the code to write PlayerAI.py, which intelligently plays the 2048 puzzle game. Below is a startup code snippet that allows you to observe what the game looks like when it runs. Here's the "naive" player AI: The getMove() function randomly selects the next move from among the available moves.
 
 ```
 from random import randint 
@@ -14,9 +17,7 @@ class PlayerAI(BaseAI):
         return moves[randint(0, len(moves) - 1)] if moves else None 
 ```
 
-Of course, that is indeed a very naive way to play the 2048-puzzle game. If you submit this as your 
-finished product, you will receive a grade of zero. You should implement your Player AI with the 
-following points in mind: 
+Of course, that's actually a very naive way to play the 2048 puzzle game. Player AI should be implemented with the following in mind:
 
 * Employ the minimax algorithm. This is a requirement. There are many viable strategies to 
 beat the 2048-puzzle game, but in this assignment we will be practicing with the minimax 
