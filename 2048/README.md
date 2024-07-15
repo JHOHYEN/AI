@@ -1,11 +1,5 @@
 # 2048
 
-
-이 코드는 2048 퍼즐 게임을 지능적으로 플레이하는 PlayerAI.py를 작성하는 것입니다. 다음은 게임이 실행될 때 게임이 어떻게 보이는지 관찰할 수 있는 시작 코드 조각입니다. 다음의 "순진한" 플레이어 AI에서. getMove() 함수는 사용 가능한 이동 중에서 무작위로 다음 이동을 선택합니다.
-
-
-물론, 그것은 실제로 2048 퍼즐 게임을 플레이하는 매우 순진한 방법입니다. 다음 사항을 염두에 두고 플레이어 AI를 구현해야 합니다.
-
 This is the code to write PlayerAI.py, which intelligently plays the 2048 puzzle game. Below is a startup code snippet that allows you to observe what the game looks like when it runs. Here's the "naive" player AI: The getMove() function randomly selects the next move from among the available moves.
 
 ```
